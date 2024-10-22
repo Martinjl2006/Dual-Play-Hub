@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logo.png" type="image/png">
+    <title>DualPlay Hub</title>
+    <style>
+        body {
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 1000px; 
+            gap:5px;
+            margin: 0;
+            
+            
+        }
+
+        .void{
+            height:35%;
+            
+        }
+        .container {
+            gap: 5px;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            background-color:rgba(20, 20, 20, 0.445);
+            backdrop-filter: blur(15px);
+        }
+        .header {
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 25%;
+            height: 45%;
+
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap:100px;
+            padding-top: 30px;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+
+            
+        }
+
+        .void h1{
+            color: white;
+            text-shadow: 
+            0 0 10px greenyellow,
+            0 0 20px greenyellow,
+            0 0 40px greenyellow,
+            0 0 80px greenyellow;
+        }
+
+        .void{
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            font-size: 100px;
+
+        }
+
+.button-40 {
+        --glow-color: rgb(133, 204, 145);
+        --glow-spread-color: rgba(123, 255, 145, 0.781);
+        --enhanced-glow-color: rgb(210, 255, 206);
+        --btn-color: rgb(64, 136, 61);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+        }
+
+.button-40::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.button-40:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.button-40:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+        .game-cover {
+            width: 200px;
+            height: 350px;
+            margin-right: 20px;
+        }
+        .text {
+            font-size: 1.5em;
+            width: 60%;
+        }
+
+        
+
+        button{
+            width: 160px;
+            height: 60px;
+        }
+
+        .background{
+            position: absolute;
+            object-fit: cover;
+            z-index: -1;
+            height: 175%;
+            width: 100%;
+        }
+
+        
+
+    
+    </style>
+</head>
+<body>
+    <img class="background" src="../minecraft-1578073_1920.jpg">
+    <div class="void"> <h1>Minecraft</h1></div>
+    <div class="container">
+        <div class="content">
+            
+            <div class="text"><p>Minecraft es un videojuego que permite a los jugadores explorar un mundo tridimensional compuesto de bloques y descubrir recursos. Los jugadores pueden construir estructuras, elaborar herramientas, y sobrevivir a criaturas hostiles. El juego ofrece modos de supervivencia y creativo, y se caracteriza por su estética pixelada y su capacidad para fomentar la creatividad y la colaboración en línea. Minecraft ha ganado una popularidad masiva y se ha convertido en un fenómeno cultural desde su lanzamiento. Ideal tanto para quienes buscan aventura como para los que disfrutan creando sus propios mundos.</p></div>
+            <button class="button-40" onclick="location.href='https://classic.minecraft.net'">
+                <label>
+                    Jugar
+
+            </label>
+            </button>
+            
+        </div>
+    </div>
+</body>
+</html>
