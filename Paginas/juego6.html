@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logo.png" type="image/png">
+    <title>DualPlay Hub</title>
+    <style>
+        body {
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 1000px; 
+            gap:5px;
+            margin: 0;
+            
+            
+        }
+
+        .void{
+            height:35%;
+            
+        }
+        .container {
+            gap: 5px;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            background-color:rgba(20, 20, 20, 0.445);
+            backdrop-filter: blur(15px);
+        }
+        .header {
+            font-size: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 25%;
+            height: 35%;
+
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap:100px;
+            padding-top: 30px;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+
+            
+        }
+
+        .void h1{
+
+            font-size: 1.2em;
+            color: white;
+            text-shadow: 
+            0 0 10px rgb(47, 255, 227),
+            0 0 20px rgb(47, 248, 255),
+            0 0 40px rgb(196, 47, 255),
+            0 0 80px rgb(196, 47, 255);
+        }
+
+        .void{
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            font-size: 100px;
+
+        }
+
+.button-40 {
+        --glow-color: rgb(198, 133, 204);
+        --glow-spread-color: rgba(123, 251, 255, 0.781);
+        --enhanced-glow-color: rgb(255, 206, 248);
+        --btn-color: rgb(61, 136, 136);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+        }
+
+.button-40::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.button-40:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.button-40:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+        .game-cover {
+            width: 200px;
+            height: 350px;
+            margin-right: 20px;
+        }
+        .text {
+            font-size: 1.5em;
+            width: 60%;
+        }
+
+        
+
+        button{
+            width: 160px;
+            height: 60px;
+        }
+
+        .background{
+            position: absolute;
+            object-fit: cover;
+            z-index: -1;
+            height: 175%;
+            width: 100%;
+            
+        }
+
+        
+
+    
+    </style>
+</head>
+<body>
+    <img class="background" src="../rmg1.jpeg">
+    <div class="void"> <h1>Realm of the Mad God</h1></div>
+    <div class="container">
+        <div class="content">
+            
+            <div class="text"><p>Realm of the Mad God es un videojuego multijugador masivo en línea (MMO) de disparos y acción en 2D. Fue desarrollado originalmente por Wild Shadow Studios y publicado por Kabam, aunque actualmente es gestionado por DECA Games. El juego es conocido por su estilo gráfico retro con arte en píxeles y su jugabilidad adictiva.
+
+                El juego es cooperativo, lo que significa que los jugadores deben colaborar para enfrentarse a hordas de enemigos y jefes en un vasto mundo de fantasía. La cooperación es clave, ya que el juego es extremadamente desafiante y los enemigos pueden ser muy poderosos. Una de las características más distintivas del juego es el concepto de permadeath, es decir, cuando el personaje del jugador muere, es permanente y no puede ser resucitado. Esto añade un alto nivel de dificultad y emoción, ya que los jugadores deben ser extremadamente cautelosos.
+                
+                En Realm of the Mad God hay múltiples clases de personajes para elegir, cada una con habilidades únicas, lo que permite a los jugadores experimentar diferentes estilos de juego y estrategias. Además, el mundo del juego está lleno de eventos aleatorios y misiones especiales que los jugadores pueden completar para obtener recompensas y avanzar en el juego. La economía del juego se basa en la moneda del juego y los objetos, permitiendo a los jugadores comerciar y mejorar sus personajes de diversas maneras.</p></div>
+            <button class="button-40" onclick="location.href='https://www.realmofthemadgod.com'">
+                <label>
+                    Jugar
+
+            </label>
+            </button>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logo.png" type="image/png">
+    <title>DualPlay Hub</title>
+    <style>
+        body {
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 1000px; 
+            gap:5px;
+            margin: 0;
+            
+            
+        }
+
+        .void{
+            height:35%;
+            
+        }
+        .container {
+            gap: 5px;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            background-color:rgba(20, 20, 20, 0.445);
+            backdrop-filter: blur(15px);
+        }
+        .header {
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 25%;
+            height: 45%;
+
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap:100px;
+            padding-top: 30px;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+
+            
+        }
+
+        .void h1{
+            color: white;
+            text-shadow: 
+            0 0 10px rgb(242, 98, 94),
+            0 0 20px rgb(80, 73, 209),
+            0 0 40px rgb(238, 112, 106),
+            0 0 80px rgb(84, 65, 163);
+        }
+
+        .void{
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            font-size: 100px;
+
+        }
+
+.button-40 {
+        --glow-color: rgb(204, 133, 133);
+        --glow-spread-color: rgba(123, 125, 255, 0.781);
+        --enhanced-glow-color: rgb(210, 255, 206);
+        --btn-color: rgb(61, 61, 136);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        transition: all 0.3s;
+        }
+
+.button-40::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.button-40:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.button-40:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+
+        .game-cover {
+            width: 200px;
+            height: 350px;
+            margin-right: 20px;
+        }
+        .text {
+            font-size: 1.5em;
+            width: 60%;
+        }
+
+        
+
+        button{
+            width: 160px;
+            height: 60px;
+        }
+
+        .background{
+            position: absolute;
+            object-fit: cover;
+            z-index: -1;
+            height: 175%;
+            width: 100%;
+        }
+
+        
+
+    
+    </style>
+</head>
+<body>
+    <img class="background" src="../agario.jpeg">
+    <div class="void"> <h1>Agar.io</h1></div>
+    <div class="container">
+        <div class="content">
+            
+            <div class="text"><p>
+                Agar.io es un popular juego en línea de navegador lanzado en 2015 por el desarrollador brasileño Matheus Valadares. El juego es conocido por su simplicidad y adicción, y rápidamente se convirtió en un fenómeno global.
+                
+                En Agar.io, el jugador controla una célula en un mapa de Petri con el objetivo principal de crecer lo más grande posible comiendo células más pequeñas y evitando ser comido por otras células más grandes. La célula se mueve en la dirección en la que el jugador apunta el cursor del ratón. Crece al consumir pequeñas partículas esparcidas por el mapa, así como otras células controladas por jugadores más pequeños. El jugador puede dividir su célula en dos, lanzando una parte de su masa para alcanzar y consumir células más pequeñas, y puede expulsar una parte de su masa para alimentar a otras células o virus o para moverse más rápido.
+                
+                Agar.io ofrece varios modos de juego, incluyendo FFA (Free For All), donde cada jugador compite para ser la célula más grande; Equipos, donde los jugadores se agrupan y deben trabajar juntos para dominar el mapa; y Experimental, que incluye características y mecánicas experimentales que los desarrolladores están probando. Los virus son objetos verdes y espinosos que dividen a las células grandes en varias más pequeñas si las tocan, mientras que los pellets son pequeñas partículas que las células pueden consumir para crecer.</p></div>
+            <button class="button-40" onclick="location.href='https://agar.io'">
+                <label>
+                    Jugar
+
+            </label>
+            </button>
+            
+        </div>
+    </div>
+</body>
+</html>

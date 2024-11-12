@@ -127,8 +127,27 @@ body{
 }
 
 .foot{
-    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 18, 18);
     height:50px;
     border: 5px solid transparent;
+    backdrop-filter: blur(10px);
     width:1366px;
+    flex: 1 0 140px;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.foot-links{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+html{
+    overflow: hidden;
 }

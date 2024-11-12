@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="logo.png" type="image/png">
     <script>
+        document.addEventListener("DOMContentLoaded", function() { 
+            function isMobile() 
+            { return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); } 
+            if (isMobile()) { 
+                window.location.href = "error.html"; } 
+            });
         document.addEventListener('DOMContentLoaded', function() {
             const cards = document.querySelectorAll('.card');
             const body = document.querySelector('#body');
@@ -53,7 +59,14 @@
                 });
             });
         });
+
+        function toggleSeccion() { 
+            var seccion = document.getElementById("seccionOculta"); 
+            if (seccion.style.display === "none") 
+            { seccion.style.display = "block"; } 
+            else { seccion.style.display = "none"; } }
     </script>
+   
 </head>
 <body>
     <img id="background" src="fondo.jpeg">
@@ -61,6 +74,7 @@
         <h1>Juegos</h1>
     </header>
     <div id="body">
+        
         <div class="card" data-color="#05fc4f69" data-bg="minecraft.jpeg" onclick="location.href='Paginas/juego1.html'">
             <img src="minecraft.jpeg" >
             <h4>Minecraft</h4>
@@ -77,11 +91,46 @@
             <img src="diablo.jpeg">
             <h4>Diablo</h4>
         </div>
+        <div class="card" data-color="rgb(238, 112, 106)" data-bg="agario.jpeg" onclick="location.href='Paginas/juego5.html'">
+            <img src="agario.png">
+            <h4>Agar.io</h4>
+        </div>
+        <div class="card" data-color="rgb(47, 255, 227)" data-bg="rmg1.jpeg" onclick="location.href='Paginas/juego6.html'">
+            <img src="rmg.jpeg">
+            <h4>Realm of the Mad God</h4>
+        </div>
+        <div class="card" data-color="rgb(241, 255, 47)" data-bg="ssh.jpeg" onclick="location.href='Paginas/juego7.html'">
+            <img src="ss.jpeg">
+            <h4>Shell Shockers</h4>
+        </div>
         
         
     </div>
-    <footer>
-        <div class="foot"></div>
+    <footer >
+        <button onclick="toggleSeccion()">X</button>
+        <div class="foot" id="seccionOculta">
+            <div class="foot-links">
+                
+                <div class="social-media"> 
+                    <a href="https://www.facebook.com" target="_blank" style="color: white; margin: 0 10px;">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank" style="color: white; margin: 0 10px;">Twitter</a> 
+                    <a href="https://www.instagram.com" target="_blank" style="color: white; margin: 0 10px;">Instagram</a> 
+                    <a href="https://www.youtube.com" target="_blank" style="color: white; margin: 0 10px;">YouTube</a> 
+                </div> 
+                <div class="links"> 
+                    <a href="Paginas/about.html" style="color: white; margin: 0 10px;">Sobre Nosotros</a> 
+                    <a href="mailto:info@dualplayhub.com" style="color: white; margin: 0 10px;">Contacto</a> 
+                    <a href="Paginas/privacity.html" style="color: white; margin: 0 10px;">Política de Privacidad</a> 
+                    <a href="Paginas/terms.html" style="color: white; margin: 0 10px;">Términos de Servicio</a> 
+                    <a href="Paginas/empleo.html" style="color: white; margin: 0 10px;">Empleo</a>
+                    <a href="mailto:suggestions@dualplayhub.com" style="color: white; margin: 0 10px;">Sugerencias</a>
+                </div> 
+            </div>
+            <div class="copyright"> 
+                <p style="margin: 10px 0; color: white;">&copy; 2024 Dual Play Hub. Todos los derechos reservados.</p>
+            </div>
+            
+        </div>
     </footer>
 </body>
 </html>
