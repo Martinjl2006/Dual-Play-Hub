@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Solicitud de Empleo - Dual Play Hub</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        function Respuesta(){
+            alert("no estamos recibiendo solicitudes por el momento");
+        }
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -119,7 +124,7 @@
             <label for="cover_letter">Carta de Presentación:</label>
             <textarea id="cover_letter" name="cover_letter" rows="6" cols="50" required></textarea>
             
-            <input type="submit" value="Enviar Solicitud">
+            <input type="submit" value="Enviar Solicitud" onclick="Respuesta()">
         </form>
     </main>
     <footer>
